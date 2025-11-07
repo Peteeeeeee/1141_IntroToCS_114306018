@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab1_114306018</title>
+</head>
+<body>
+    <form method = "post" action="/action_page.php">
+    <table border="1">
+        <tr>
+            <th colspan="3">
+            About--114306018
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="3">
+                <p><img src = "cat.jpg" alt = "a cat image"width = "300" height = "200" /></p>
+                personal photo
+            </td>    
+            <td colspan="2">
+                <label> Name:
+                    <input name = "name" type = "text" ><br>
+                <label> Gender:
+                    <input type = "radio" name = "gender" value = "male"checked > Male
+                    <input type = "radio" name = "gender" value = "female"checked > Female 
+                    <input type = "radio" name = "gender" value = "other"checked > Other 
+             </td>       
+        </tr>
+        <tr>
+            <td>
+            <label for="counties">County:</label>
+                <select name = "counties">
+                    <option value = "taipei"selected>Taipei</option>
+                    <option value = "tainan">Tainan</option>
+                    <option value = "taichung">Taichung</option>
+                    <option value = "taoyuan">Taoyuan</option>
+                </select> 
+            </td>
+            <td>      
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">   
+            </td>      
+        </tr>   
+        <tr>
+            <td colspan="2">
+                <label> E-mail:
+                <input type = "email" name = "email" required>
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                Hobby
+            </td>
+            <td colspan="2">
+                <input type="checkbox" name="hobby1" value="Swimming">
+                <label for="hobby1"> Swimming</label>
+                <input type="checkbox" name="hobby2" value="Volleyball">
+                <label for="hobby2"> Volleyball</label>
+                <input type="checkbox" name="hobby3" value="Movie" checked>
+                <label for="hobby3"> Movie</label>
+                <input type="checkbox" name="hobby4" value="Game" checked>
+                <label for="hobby4"> Game</label>
+                <input type="checkbox" name="hobby5" value="Sleep" checked>
+                <label for="hobby5"> Sleep</label>
+            </td>    
+        </tr>
+        <tr>
+            <td>
+                Skill
+            </td>
+            <td colspan="2">
+                <input type="checkbox" name="skill1" value="Java">
+                <label for="skill1"> Java</label>
+                <input type="checkbox" name="skill2" value="HTML">
+                <label for="skill2"> HTML</label>
+                <input type="checkbox" name="skill3" value="Python" checked>
+                <label for="skill3"> Python</label>
+                <input type="checkbox" name="skill4" value="Microsoft Office" checked>
+                <label for="skill4"> Microsoft Office</label>
+                <input type="checkbox" name="skill5" value="Premiere" checked>
+                <label for="skill5"> Premiere</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Say Something
+            </td>
+            <td colspan="2">
+                <textarea placeholder="Say something here."></textarea>
+            </td>    
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type = "submit" value = "Submit">
+                <input type = "reset" value = "Clear">
+            </td>    
+        </tr>    
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
