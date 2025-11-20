@@ -1,0 +1,147 @@
+/* Reset 基本設定 */
+* {
+    box-sizing: border-box;
+}
+
+/* Requirement #1: Body 背景與置中 [cite: 184] */
+body {
+    background-color: #eeede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 讓內容垂直置中 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Requirement #1: 主容器樣式 [cite: 180, 181, 182, 183] */
+.main-container {
+    width: 1000px; /* 固定寬度 */
+    background-color: white;
+    display: flex; /* 分左右兩欄 */
+    border-radius: 15px; /* 圓角 */
+    overflow: hidden; /* 確保圓角不被內容切掉 */
+}
+
+/* Requirement #2 & #3: 左側面板 (藍色區) [cite: 187, 191] */
+.left-panel {
+    width: 30%;
+    background-color: #5D8AA8; /* 你可以換成喜歡的顏色 */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-panel img {
+    width: 100%;
+    display: block;
+}
+
+.about-me h3, .contact h3 {
+    /* 使用較細的 1px 線，並用半透明白色 rgba(255,255,255,0.5) 讓它看起來柔和 */
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.text-content-panel {
+    padding: 20px;
+}
+
+.school-icon {
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* Requirement #2: 右側面板 [cite: 188] */
+.right-panel {
+    width: 70%;
+    padding: 30px;
+}
+
+/* Requirement #4: 區塊標題樣式 [cite: 197] */
+.section-title {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+/* Requirement #5: Education 時間軸 [cite: 198, 199, 200] */
+.timeline-item {
+    margin-bottom: 10px;
+    display: flex; /* 讓年份與描述並排 */
+}
+
+.year {
+    font-weight: bold;
+    width: 120px; /* 固定年份寬度讓文字對齊 */
+    flex-shrink: 0;
+}
+
+.description {
+    /* 描述會自動填滿 .year 之後的剩餘空間 */
+    line-height: 1.5; 
+}
+
+/* Requirement #6: Skill 標籤 [cite: 204, 205, 206] */
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px; /* 圓角 badge 效果 */
+    font-size: 0.9rem;
+}
+
+/* Requirement #7: Homework & Lab 分兩欄 [cite: 208, 209] */
+.hw-lab-container {
+    display: flex;
+    gap: 20px;
+}
+
+.hw-column, .lab-column {
+    flex: 1; /* 平均分配寬度 */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.hw-column ul, .lab-column ul {
+    padding-left: 20px;
+}
+
+/* 連結樣式 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #5D8AA8;
+    font-weight: bold;
+}
+
+/* Requirement #8: Favorite Music [cite: 213, 219] */
+.music-container {
+    display: flex;
+    justify-content: space-around; /* 平均分散 */
+    text-align: center;
+}
+
+.music-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* 圓形封面 (可選) */
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.music-note {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
